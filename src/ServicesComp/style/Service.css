@@ -1,0 +1,9 @@
+.Service-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 98vw;
+}
+.service-section{
+    flex: 1;
+}

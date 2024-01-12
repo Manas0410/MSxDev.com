@@ -52,9 +52,9 @@
     font-weight: 600;
 }
 
-.social-links img {
+/* .social-links img {
     padding-bottom: 25px;
-}
+} */
 
 .social-icons {
     /* display: flex;
@@ -77,7 +77,7 @@
 }
 
 .social-icons a:hover {
-    color: #000;
+    color: #FC5E01;
 }
 
 .social-icons a i {
@@ -86,7 +86,7 @@
     border-radius: 3px;
     color: #82074a;
     font-size: 16px;
-    margin-right: 12px;
+    /* margin-right: 12px; */
 }
 
 li {
@@ -121,7 +121,7 @@ li {
 }
 
 .use-links li a:hover {
-    color: #000;
+    color: #FC5E01;
 }
 
 .address h2 {
@@ -181,3 +181,7 @@ a {
 }
 
 /* footer section end */
+img.bannerIcon {
+    width: 20px;
+    height: 20px;
+}

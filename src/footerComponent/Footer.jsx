@@ -50,17 +50,38 @@ const Footer = () => {
                 <div class="social-icons">
                   <li>
                     <a href="">
-                      <i class="fa-brands fa-facebook-f"></i> Facebook
+                      <i class="fa-brands fa-facebook-f">
+                        <img
+                          src="./Facebook_icon.svg.png"
+                          alt="facebook"
+                          className="bannerIcon"
+                        />{" "}
+                      </i>{" "}
+                      Facebook
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="fa-brands fa-instagram"></i> Instagram
+                      <i class="fa-brands fa-instagram">
+                        <img
+                          src="./insta.png"
+                          alt="facebook"
+                          className="bannerIcon"
+                        />
+                      </i>{" "}
+                      Instagram
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="fa-brands fa-linkedin-in"></i> Linkedin
+                      <i class="fa-brands fa-linkedin-in">
+                        <img
+                          src="./LinkedIn.png"
+                          alt="facebook"
+                          className="bannerIcon"
+                        />
+                      </i>{" "}
+                      Linkedin
                     </a>
                   </li>
                 </div>
