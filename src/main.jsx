@@ -14,6 +14,7 @@ import Home from "./Home.jsx";
 // import "./index.css";
 import Service from "./ServicesComp/Services.jsx";
 import ContactPage from "./ContactUsComponent/ContactPage.jsx";
+import ServicePage from "./ServicesComp/page/ServicePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/test",
-    element: <Service />,
+    path: "/services",
+    element: <ServicePage />,
   },
   {
     path: "/contact",
