@@ -11,9 +11,9 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home.jsx";
-import "./index.css";
-import ContactForm from "./ContactUsComponent/ContactForm.jsx";
+// import "./index.css";
 import Service from "./ServicesComp/Services.jsx";
+import ContactPage from "./ContactUsComponent/ContactPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <ContactForm />,
+    element: <ContactPage />,
   },
 ]);
 
