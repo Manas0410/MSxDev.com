@@ -18,6 +18,7 @@ body {
     box-shadow: 5px 3px 7px -1px rgba(162, 162, 162, 0.25);
     border-right: solid 1px #e9ebf3;
     padding: 14px;
+    flex-wrap: wrap;
 }
 
 .site-logo {
@@ -48,11 +49,15 @@ button:focus-visible {
 }
 
 .header-right {
-    flex: 1.2;
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
     
 }
 .header-left{
-    flex: 1;
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
 }
 .header-middle {
     flex: 9;
@@ -60,12 +65,35 @@ button:focus-visible {
     justify-content: flex-start;
     gap: 31px;
     font-size: 26px;
-    padding-bottom: 12px;
+   
     padding-left: 24px;
 }
 .header-items{
     cursor: pointer;
+    font-size: 26px;
+    margin-left: 12px;
+    padding-top: 5px;
 }
 .header-items:hover {
     color:#FC5E01 ;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .header-left{ 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .header-box{
+        align-items: baseline;
+    }
+    .button{
+        font-size: 12px;
+    }
+    .header-items{
+        font-size: 20px;
+    }
 }

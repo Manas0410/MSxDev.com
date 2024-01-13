@@ -1,0 +1,21 @@
+.main-content{
+    margin-top: 4.5rem;
+    color: white;
+    background-color: #291E30;
+    padding: 20px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-heading{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.auto-type{
+    font-weight: 600;
+    font-size: 40px;
+}

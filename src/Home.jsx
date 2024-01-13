@@ -40,6 +40,8 @@ import Header from "./headerComponent/Header";
 import MainComponent from "./MainComponent";
 import "./home.css";
 import Footer from "./footerComponent/Footer";
+import BannerComponent from "./bannerComponent/BannerComponent";
+import Service from "./ServicesComp/Services";
 const SERVICE_LIST = [
   {
     img: "",
@@ -65,7 +67,8 @@ function Home() {
   return (
     <div>
       <Header />
-      <MainComponent />
+      <BannerComponent />
+      <Service />
       {/* <div className="class-list">
         {SERVICE_LIST.map((items) => {
           return (
@@ -77,7 +80,7 @@ function Home() {
           );
         })}
       </div> */}
-      <div className="why-to-select">
+      {/* <div className="why-to-select">
         <div>
           WHY CHOOSE OUR DIGITAL MARKETING AND WEB DESIGN AGENCY FOR YOUR ONLINE
           SUCCESS
@@ -87,7 +90,7 @@ function Home() {
           strategy together! Contact our team now and let’s bring your vision to
           life. From branding to SEO, we’ve got you covered!
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
