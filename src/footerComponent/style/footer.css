@@ -1,5 +1,9 @@
 body {
     background: #fbfbfd;
+    
+}
+*{
+    cursor: auto;
 }
 
 .new_footer_area {
@@ -69,6 +73,7 @@ button:focus {
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
     color: #FC5E01;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .new_footer_top .f_widget.about-widget .f_list li {
