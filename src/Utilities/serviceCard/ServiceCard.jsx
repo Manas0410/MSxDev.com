@@ -1,10 +1,10 @@
 import "./serviceCard.css";
-const ServiceCard = ({ text1, text2 }) => {
+const ServiceCard = ({ text1, description }) => {
   return (
     <div className="ServiceCard">
-      <div className="banner">
+      {/* <div className="banner">
         <div className="line">
-          <span>services</span>
+          <span>{text1}</span>
         </div>
       </div>
 
@@ -19,7 +19,11 @@ const ServiceCard = ({ text1, text2 }) => {
           <div className="text1">{text1}</div>
           <div className="text2">{text2}</div>
         </div>
-      </div>
+      </div> */}
+      <div className="heading">{text1}</div>
+      <div className="description">{description}</div>
+
+
     </div>
   );
 };

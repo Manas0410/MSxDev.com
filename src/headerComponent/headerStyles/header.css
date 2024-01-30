@@ -4,14 +4,15 @@ body {
 }
 
 .header-items {
-    color: white;
+
+    color: white !important;
 }
 
 .header-box {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #291E30;
+    background-color: #503E9C !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +20,7 @@ body {
     border-right: solid 1px #e9ebf3;
     padding: 14px;
     flex-wrap: wrap;
+    z-index: 100;
 }
 
 .site-logo {
@@ -70,12 +72,13 @@ button:focus-visible {
 }
 .header-items{
     cursor: pointer;
-    font-size: 26px;
-    margin-left: 12px;
+    font-size: 26px !important;
+    margin-left: 2rem;
     padding-top: 5px;
+
 }
 .header-items:hover {
-    color:#FC5E01 ;
+    color:#FC5E01 !important;
 }
 
 
@@ -96,4 +99,12 @@ button:focus-visible {
     .header-items{
         font-size: 20px;
     }
+}
+
+.contact-us{
+    margin-left: 1.5rem;
+}
+
+.bg-dark{
+    background-color: none !important;
 }

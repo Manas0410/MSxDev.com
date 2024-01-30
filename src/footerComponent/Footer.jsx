@@ -2,126 +2,148 @@ import "./style/footer.css";
 const Footer = () => {
   return (
     <>
-      <footer id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              {/* <a href="index.html"><img src="https://logo-download.com/wp-content/data/images/2021/08/Levi_Strauss__Co.-Logo.png" alt="" class="img-fluid logo-footer" /></a> */}
-              <div class="footer-about">
-                <p>Dummy data </p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="useful-link">
-                <h2>Useful Links</h2>
-                <img
-                  src="./assets/images/about/home_line.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="use-links">
-                  <li>
-                    <a href="index.html">
-                      <i class="fa-solid fa-angles-right"></i> Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about.html">
-                      <i class="fa-solid fa-angles-right"></i> About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="gallery.html">
-                      <i class="fa-solid fa-angles-right"></i> Gallery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html">
-                      <i class="fa-solid fa-angles-right"></i> Contact
-                    </a>
-                  </li>
+      <footer className="new_footer_area bg_color">
+        <div className="new_footer_top">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-3 col-md-6">
+                <div
+                  className="f_widget company_widget wow fadeInLeft"
+                  data-wow-delay="0.2s"
+                  style={{
+                    visibility: "visible",
+                    animationDelay: "0.2s",
+                    animationName: "fadeInLeft",
+                  }}
+                >
+                  <h3 className="f-title f_600 t_color f_size_18">
+                    Get in Touch
+                  </h3>
+                  <p>
+                    Don’t miss any updates of our new templates and extensions.!
+                  </p>
+                  <form
+                    action="#"
+                    className="f_subscribe_two mailchimp"
+                    method="post"
+                    novalidate="true"
+                    _lpchecked="1"
+                  >
+                    <input
+                      type="text"
+                      name="EMAIL"
+                      className="form-control memail"
+                      placeholder="Email"
+                    />
+                    <button className="btn btn_get btn_get_two" type="submit">
+                      Subscribe
+                    </button>
+                    <p
+                      className="mchimp-errmessage"
+                      style={{ display: "none" }}
+                    ></p>
+                    <p
+                      className="mchimp-sucmessage"
+                      style={{ display: "none" }}
+                    ></p>
+                  </form>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="social-links">
-                <h2>Follow Us</h2>
-                <img src="./assets/images/about/home_line.png" alt="" />
-                <div class="social-icons">
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-facebook-f">
-                        <img
-                          src="./Facebook_icon.svg.png"
-                          alt="facebook"
-                          className="bannerIcon"
-                        />{" "}
-                      </i>{" "}
-                      Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-instagram">
-                        <img
-                          src="./insta.png"
-                          alt="facebook"
-                          className="bannerIcon"
-                        />
-                      </i>{" "}
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-linkedin-in">
-                        <img
-                          src="./LinkedIn.png"
-                          alt="facebook"
-                          className="bannerIcon"
-                        />
-                      </i>{" "}
-                      Linkedin
-                    </a>
-                  </li>
+              <div className="col-lg-3 col-md-6">
+                <div
+                  className="f_widget about-widget pl_70 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                  style={{
+                    visibility: "visible",
+                    animationDelay: "0.4s",
+                    animationName: "fadeInLeft",
+                  }}
+                >
+                  <h3 className="f-title f_600 t_color f_size_18">Download</h3>
+                  <ul className="list-unstyled f_list">
+                    <li>
+                      <a href="#">Company</a>
+                    </li>
+                    <li>
+                      <a href="#">Android App</a>
+                    </li>
+                    <li>
+                      <a href="#">ios App</a>
+                    </li>
+                    <li>
+                      <a href="#">Desktop</a>
+                    </li>
+                    <li>
+                      <a href="#">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#">My tasks</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="address">
-                <h2>Address</h2>
-                <img
-                  src="./assets/images/about/home_line.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="address-links">
-                  <li class="address1">
-                    <i class="fa-solid fa-location-dot"></i> Kolathur
-                    ramankulam- Malappuram Dt Kerala 679338
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-solid fa-phone"></i> +91 90904500112
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-solid fa-envelope"></i> mail@1234567.com
-                    </a>
-                  </li>
+              <div className="col-lg-3 col-md-6">
+                <div
+                  className="f_widget about-widget pl_70 wow fadeInLeft"
+                  data-wow-delay="0.6s"
+                  style={{
+                    visibility: "visible",
+                    animationDelay: "0.6s",
+                    animationName: "fadeInLeft",
+                  }}
+                >
+                  <h3 className="f-title f_600 t_color f_size_18">Help</h3>
+                  <ul className="list-unstyled f_list">
+                    <li>
+                      <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="#">Term &amp; conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                      <a href="#">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="#">Support Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div
+                  className="f_widget social-widget pl_70 wow fadeInLeft"
+                  data-wow-delay="0.8s"
+                  style={{
+                    visibility: "visible",
+                    animationDelay: "0.8s",
+                    animationName: "fadeInLeft",
+                  }}
+                >
+                  <h3 className="f-title f_600 t_color f_size_18">
+                    Team Solutions
+                  </h3>
+                  <div className="f_social_icon">
+                    <a href="#" className="fab fa-facebook"></a>
+                    <a href="#" className="fab fa-twitter"></a>
+                    <a href="#" className="fab fa-linkedin"></a>
+                    <a href="#" className="fab fa-pinterest"></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div className="footer_bg">
+            <div className="footer_bg_one"></div>
+            <div className="footer_bg_two"></div>
+          </div>
         </div>
       </footer>
-      <section id="copy-right">
-        <div class="copy-right-sec">
-          <i class="fa-solid fa-copyright"></i>
-          2024 Powerd By <a href="#"></a>
-        </div>
-      </section>
     </>
   );
 };
