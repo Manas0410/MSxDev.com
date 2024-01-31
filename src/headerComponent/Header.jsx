@@ -5,7 +5,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light header-box">
       <div className="container-fluid">
-        <img src="./logo.svg" className="site-logo" />
+        <img src="./logo.svg" className="site-logo" alt="MSxDev" />
         <button
           className="navbar-toggler navbar-dark bg-dark"
           type="button"

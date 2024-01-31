@@ -37,19 +37,19 @@ const BannerComponent = () => {
       <div>{/* <img src={homeImg} className="image-box" /> */}</div>
       <div className="content">
         <div className="info-box">
-          <i className="fas fa-mobile-alt">
+          <i className="fas fa-mobile-alt element">
             <span class="material-symbols-outlined">phone_iphone</span>
           </i>
           <h4 className="d-inline-block details">
-            <span>+91-7007022949</span>
+            <span style={{ color: "white" }}>+91-7007022949</span>
           </h4>
         </div>
         <div className="info-box">
-          <i className="far fa-envelope">
+          <i className="far fa-envelope element">
             <span class="material-symbols-outlined">mail</span>
           </i>
           <h4 className="d-inline-block details">
-            <span>msxdev01@gmail.com</span>
+            <span style={{ color: "white" }}>msxdev01@gmail.com</span>
           </h4>
         </div>
         {/* <div className="info">

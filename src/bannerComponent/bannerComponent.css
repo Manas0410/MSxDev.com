@@ -44,3 +44,7 @@
 .details{
     margin-left: 12px;
 }
+.element::before {
+    content: none;
+    /* or content: ""; */
+}
