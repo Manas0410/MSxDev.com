@@ -15,6 +15,7 @@ import Home from "./Home.jsx";
 import Service from "./ServicesComp/Services.jsx";
 import ContactPage from "./ContactUsComponent/ContactPage.jsx";
 import ServicePage from "./ServicesComp/page/ServicePage.jsx";
+import DemoBanner from "./DemoComponent/DemoBanner/DemoBanner.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage />,
+  },
+  {
+    path: "/test",
+    element: <DemoBanner />,
   },
 ]);
 
