@@ -42,6 +42,7 @@ import "./home.css";
 import Footer from "./footerComponent/Footer";
 import BannerComponent from "./bannerComponent/BannerComponent";
 import Service from "./ServicesComp/Services";
+import AboutUsBanner from "./AboutUsComponent/AboutUsBanner/AboutUsBanner";
 const SERVICE_LIST = [
   {
     img: "",
@@ -69,28 +70,7 @@ function Home() {
       <Header />
       <BannerComponent />
       <Service />
-      {/* <div className="class-list">
-        {SERVICE_LIST.map((items) => {
-          return (
-            <ItemCard
-              img={items.img}
-              heading={items.heading}
-              content={items.content}
-            />
-          );
-        })}
-      </div> */}
-      {/* <div className="why-to-select">
-        <div>
-          WHY CHOOSE OUR DIGITAL MARKETING AND WEB DESIGN AGENCY FOR YOUR ONLINE
-          SUCCESS
-        </div>
-        <div>
-          Let’s build a stunning web design and an effective digital marketing
-          strategy together! Contact our team now and let’s bring your vision to
-          life. From branding to SEO, we’ve got you covered!
-        </div>
-      </div> */}
+      <AboutUsBanner />
       <Footer />
     </div>
   );

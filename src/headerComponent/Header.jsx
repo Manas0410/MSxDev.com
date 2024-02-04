@@ -63,7 +63,6 @@ function Header() {
             </li>
           </ul>
           <form className="d-flex contact-us">
-            {/* <Link to={"./contact"}> */}
             <button
               className="button"
               onClick={() => {
@@ -72,7 +71,6 @@ function Header() {
             >
               Contact Us
             </button>
-            {/* </Link> */}
           </form>
         </div>
       </div>

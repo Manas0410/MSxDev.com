@@ -17,7 +17,9 @@ const Service = () => {
         <div className="row justify-content-center text-center">
           <div className="col-md-10 col-lg-8">
             <div className="header-section">
-              <h2 className="title">Exclusive Services</h2>
+              <h2 className="title">
+                Exclusive <span style={{ color: "#FC5E01" }}>Services</span>{" "}
+              </h2>
               <p className="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabitur malesuada fermentum purus, eu volutpat nisi laoreet
