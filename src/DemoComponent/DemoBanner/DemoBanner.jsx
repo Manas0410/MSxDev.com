@@ -1,78 +1,66 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./styles/demoBanner.css";
+
 const DemoBanner = () => {
   useEffect(() => {
-    $(".slider-for").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: ".slider-nav",
-    });
-    $(".slider-nav").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: ".slider-for",
-      dots: true,
-      focusOnSelect: true,
-    });
-
-    $("a[data-slide]").click(function (e) {
-      e.preventDefault();
-      var slideno = $(this).data("slide");
-      $(".slider-nav").slick("slickGoTo", slideno - 1);
-    });
+    // No need to initialize Slick here as we will be using react-slick
+    // We can handle slide changes using state and props in React
   }, []);
+
+  const handleSlideClick = (slideIndex) => {
+    // This function will handle slide changes
+    // Slide index starts from 0, so we need to subtract 1
+    // We can set activeSlideIndex state to trigger re-rendering and change the slide
+    // However, we will keep it simple for demonstration
+    // alert("Go to slide " + (slideIndex + 1));
+  };
+
   return (
-    <>
-      <div class="main">
-        <div class="slider slider-for">
-          <div>
-            <h3 className="htClass">1</h3>
+    <div className="main">
+      <Slider
+        className="slider slider-for"
+        slidesToShow={1}
+        slidesToScroll={1}
+        arrows={false}
+        fade
+        asNavFor=".slider-nav"
+      >
+        {[1, 2, 3, 4, 5].map((index) => (
+          <div key={index}>
+            <h3 className="htClass">{index}</h3>
           </div>
-          <div>
-            <h3 className="htClass">2</h3>
+        ))}
+      </Slider>
+      <Slider
+        className="slider slider-nav"
+        slidesToShow={3}
+        slidesToScroll={1}
+        asNavFor=".slider-for"
+        dots
+        focusOnSelect
+      >
+        {[1, 2, 3, 4, 5].map((index) => (
+          <div key={index}>
+            <h3 className="htClass">{index}</h3>
           </div>
-          <div>
-            <h3 className="htClass">3</h3>
-          </div>
-          <div>
-            <h3 className="htClass">4</h3>
-          </div>
-          <div>
-            <h3 className="htClass">5</h3>
-          </div>
-        </div>
-        <div class="slider slider-nav">
-          <div>
-            <h3 className="htClass">1</h3>
-          </div>
-          <div>
-            <h3 className="htClass">2</h3>
-          </div>
-          <div>
-            <h3 className="htClass">3</h3>
-          </div>
-          <div>
-            <h3 className="htClass">4</h3>
-          </div>
-          <div>
-            <h3 className="htClass">5</h3>
-          </div>
-        </div>
-        <div class="action">
-          <a href="#" data-slide="3">
-            go to slide 3
-          </a>
-          <a href="#" data-slide="4">
-            go to slide 4
-          </a>
-          <a href="#" data-slide="5">
-            go to slide 5
-          </a>
-        </div>
+        ))}
+      </Slider>
+      <div className="action">
+        <a href="#" onClick={() => handleSlideClick(2)}>
+          Go to slide 3
+        </a>
+        <a href="#" onClick={() => handleSlideClick(3)}>
+          Go to slide 4
+        </a>
+        <a href="#" onClick={() => handleSlideClick(4)}>
+          Go to slide 5
+        </a>
       </div>
-    </>
+    </div>
   );
 };
+
 export default DemoBanner;

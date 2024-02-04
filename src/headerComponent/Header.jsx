@@ -20,13 +20,16 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
+              <div
                 className="nav-link active header-items"
                 aria-current="page"
                 href="#"
+                onClick={() => {
+                  Navigate("/");
+                }}
               >
                 Home
-              </a>
+              </div>
             </li>
             <li className="nav-item">
               <div
@@ -60,9 +63,16 @@ function Header() {
             </li>
           </ul>
           <form className="d-flex contact-us">
-            <Link to={"./contact"}>
-              <button className="button">Contact Us</button>
-            </Link>
+            {/* <Link to={"./contact"}> */}
+            <button
+              className="button"
+              onClick={() => {
+                Navigate("/contact");
+              }}
+            >
+              Contact Us
+            </button>
+            {/* </Link> */}
           </form>
         </div>
       </div>
