@@ -48,7 +48,7 @@ const DemoBanner = () => {
           </div>
         ))}
       </Slider>
-      <div className="action">
+      {/* <div className="action">
         <a href="#" onClick={() => handleSlideClick(2)}>
           Go to slide 3
         </a>
@@ -58,7 +58,7 @@ const DemoBanner = () => {
         <a href="#" onClick={() => handleSlideClick(4)}>
           Go to slide 5
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
