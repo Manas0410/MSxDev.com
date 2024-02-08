@@ -64,7 +64,8 @@
     background: #fff;
     border-radius: 35px;
     color: #FC5E01;
-    box-shadow: 0 8px 20px -2px #FC5E01;
+    box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
+    
 }
 
 .about_header_main .about_heading {

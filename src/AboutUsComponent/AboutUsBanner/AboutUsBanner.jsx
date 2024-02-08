@@ -1,7 +1,7 @@
 import "./styles/aboutUs.css";
-const AboutUsBanner = () => {
+const AboutUsBanner = ({ aboutref }) => {
   return (
-    <div classNameName="aboutContainer">
+    <div classNameName="aboutContainer" ref={aboutref}>
       <section className="section_all bg-light" id="about">
         <div className="container">
           <div className="row">
