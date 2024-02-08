@@ -1,6 +1,7 @@
 import "./bannerComponent.css";
 import Typed from "typed.js";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const BannerComponent = () => {
   useEffect(() => {
     const typed = new Typed(".auto-type", {
@@ -20,6 +21,7 @@ const BannerComponent = () => {
     };
   }, []); // Empty dep
 
+  const navigate = useNavigate();
   return (
     <div className="main-content">
       <div className="banner-heading">Have your own website..</div>
@@ -60,7 +62,14 @@ const BannerComponent = () => {
                   </h4>
                 </div> */}
       </div>
-      <button className="button">Contact Us</button>
+      <button
+        className="button"
+        onClick={() => {
+          navigate(`/contact`);
+        }}
+      >
+        Contact Us
+      </button>
     </div>
   );
 };
