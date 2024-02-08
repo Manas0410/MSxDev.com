@@ -45,6 +45,6 @@
     margin-left: 12px;
 }
 .element::before {
-    content: none !important;
+    content: none;
     /* or content: ""; */
 }

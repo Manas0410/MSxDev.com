@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./headerStyles/header.css";
-function Header({ aboutUsRef }) {
+function Header() {
   const Navigate = useNavigate();
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light header-box">
@@ -44,16 +44,13 @@ function Header({ aboutUsRef }) {
               </div>
             </li>
             <li className="nav-item">
-              <div
+              <a
                 className="nav-link active header-items"
                 aria-current="page"
-                onClick={() => {
-                  Navigate("/");
-                  aboutUsRef.current.scrollIntoView({ behavior: "smooth" });
-                }}
+                href="#"
               >
                 About
-              </div>
+              </a>
             </li>
             <li className="nav-item">
               <a
@@ -65,7 +62,7 @@ function Header({ aboutUsRef }) {
               </a>
             </li>
           </ul>
-          <div className="d-flex contact-us">
+          <form className="d-flex contact-us">
             <button
               className="button"
               onClick={() => {
@@ -74,7 +71,7 @@ function Header({ aboutUsRef }) {
             >
               Contact Us
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </nav>

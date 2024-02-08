@@ -24,7 +24,7 @@ const ContactForm = () => {
               </div>
               <div className="content">
                 <div className="info">
-                  <i className="fas fa-mobile-alt element">
+                  <i className="fas fa-mobile-alt">
                     <span class="material-symbols-outlined">phone_iphone</span>
                   </i>
                   <h4 className="d-inline-block">
@@ -34,8 +34,8 @@ const ContactForm = () => {
                   </h4>
                 </div>
                 <div className="info">
-                  <i className="far fa-envelope element">
-                    <span class="material-symbols-outlined ">mail</span>
+                  <i className="far fa-envelope">
+                    <span class="material-symbols-outlined">mail</span>
                   </i>
                   <h4 className="d-inline-block">
                     EMAIL :
