@@ -1,11 +1,11 @@
 .main {
     font-family: Arial;
-    width: 500px;
     display: block;
+    height: 100vh;
     margin: 0 auto;
 }
 
-.htClass{
+.htClass {
     background: #c42f2f;
     color: #3498db;
     font-size: 36px;
@@ -33,4 +33,32 @@
 
 .action a:hover {
     background: #000;
+}
+
+.slider-img {
+    width: 100%;
+}
+
+
+
+.Slide {
+    width: 0%;
+    display: none;
+}
+
+.selected-Slide {
+    margin: 0 auto;
+    width: 40%;
+    display: block;
+}
+
+#myIframe {
+    width: 600px !important;
+    /* Set your desired width */
+    height: 400px !important;
+    /* Set your desired height */
+    overflow-y: auto;
+    /* Add vertical scrollbar when needed */
+    border: 1px solid #ccc;
+    /* Optional: Add border for visualization */
 }

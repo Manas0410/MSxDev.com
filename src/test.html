@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .parent {
+        height: 400px;
+        width: 400px;
+        background-color: red;
+      }
+      .child {
+        height: 200px;
+        width: 200px;
+        border-radius: 12% 80%;
+        background-color: pink;
+        animation: rotation 3s linear infinite;
+        display: grid;
+        place-items: center;
+      }
+      @keyframes rotation {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(100%);
+        }
+        50% {
+          transform: translateX(100%) translateY(100%);
+        }
+        75% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .loader {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 4px solid blue;
+        border-top-color: white;
+        animation: load 1s linear infinite;
+      }
+      @keyframes load {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .container {
+        /* Set background image */
+        background-image: url("https://m.media-amazon.com/images/I/615TIF18DiL._AC_UX679_.jpg");
+        background-size: cover; /* Cover the entire container */
+        background-attachment: fixed; /* Fixed background image */
+
+        /* Other container styles */
+        height: 1000px; /* Example height */
+        overflow-y: hidden; /* Enable vertical scrollbar for content */
+      }
+
+      .content {
+        /* Other content styles */
+        padding: 20px; /* Example padding */
+        height: 100%;
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">chootuuu</div>
+    </div>
+    <div class="loader"></div>
+    <div class="container">
+      <div class="content">
+        <!-- Your content goes here -->
+        <h1>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</h1>
+      </div>
+    </div>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <h1>manas</h1>
+    <div class="box">
+      <button id="start">Start screen share</button>
+      <div class="vid">
+        <video id="video" autoplay style="width: 500px; height: 500px"></video>
+      </div>
+      <button id="checkId">click</button>
+    </div>
+  </body>
+</html>
+<script>
+  start.onclick = async () => {
+    const screen = await navigator.mediaDevices.getDisplayMedia({
+      video: true,
+    });
+    video.srcObject = screen;
+  };
+</script>
