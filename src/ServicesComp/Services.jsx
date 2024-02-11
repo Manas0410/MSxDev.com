@@ -1,15 +1,6 @@
 import ServiceCard from "../Utilities/serviceCard/ServiceCard";
 import "./style/Service.css";
 
-const SERVICES_DESCRIPTION = {
-  Portfolio_Website:
-    "Its important to research deeply for the product you want to build. We help in that by defining the user audience, working on user stories, competitive analysis and much more.",
-  "E-Commerc-Website":
-    "If you are unsure of how your app behaves, we can help by doing a detailed UX audit that will highlight most of the issues in your SSproduct. From there, we can take it further and fix all issues.",
-  "Front End Development":
-    "We are Front End masters with a deep focus on HTML, CSS. The result of our work is a responsive, accessible, and performant websites. Either you have the design ready and want us to code it, or you want us to do both design and code, we are happy to do so",
-};
-
 const Service = () => {
   return (
     <section className="section-services">
@@ -21,10 +12,17 @@ const Service = () => {
                 Exclusive <span style={{ color: "#FC5E01" }}>Services</span>{" "}
               </h2>
               <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur malesuada fermentum purus, eu volutpat nisi laoreet
-                id. Phasellus fringilla accumsan metus, at tempor est hendrerit
-                et.
+                Discover tailored solutions for your digital journey. Our
+                comprehensive services encompass website development,
+                consultation, and seamless deployment, specializing in portfolio
+                showcases, e-commerce solutions, and expert guidance for your
+                online success.
+              </p>
+              <p
+                style={{ color: "#ff4500" }}
+                className="text_custom font-weight-bold"
+              >
+                We give an online plateform to your business ideas
               </p>
             </div>
           </div>
@@ -36,11 +34,11 @@ const Service = () => {
                 <span className="icon">
                   <i className="fab fa-battle-net"></i>
                 </span>
-                <h3 className="title">Global coverage</h3>
+                <h3 className="title">Portfolio Website </h3>
                 <p className="description">
-                  Mauris volutpat urna tristique finibus iaculis. Morbi
-                  facilisis, justo eu vulputate elementum, est augue tincidunt
-                  ante, sed efficitur leo ligula vel velit.
+                  Build a stunning online portfolio to showcase your work and
+                  attract clients with our professional portfolio website
+                  services.
                 </p>
                 <a href="#" className="learn-more">
                   Learn More
@@ -55,11 +53,11 @@ const Service = () => {
                 <span className="icon">
                   <i className="fab fa-asymmetrik"></i>
                 </span>
-                <h3 className="title">It Management</h3>
+                <h3 className="title">E-commerce Website</h3>
                 <p className="description">
-                  Mauris volutpat urna tristique finibus iaculis. Morbi
-                  facilisis, justo eu vulputate elementum, est augue tincidunt
-                  ante, sed efficitur leo ligula vel velit.
+                  Launch your online store with ease. We offer tailored
+                  e-commerce website solutions to help you sell your products
+                  online effectively.
                 </p>
                 <a href="#" className="learn-more">
                   Learn More
@@ -74,11 +72,11 @@ const Service = () => {
                 <span className="icon">
                   <i className="fab fa-artstation"></i>
                 </span>
-                <h3 className="title">Software Development</h3>
+                <h3 className="title">E-commerce Store</h3>
                 <p className="description">
-                  Mauris volutpat urna tristique finibus iaculis. Morbi
-                  facilisis, justo eu vulputate elementum, est augue tincidunt
-                  ante, sed efficitur leo ligula vel velit.
+                  Elevate your online retail presence with a customized
+                  e-commerce store. We create user-friendly platforms to boost
+                  your sales and customer experience.
                 </p>
                 <a href="#" className="learn-more">
                   Learn More
@@ -93,11 +91,11 @@ const Service = () => {
                 <span className="icon">
                   <i className="fab fa-500px"></i>
                 </span>
-                <h3 className="title">Brand Strategy</h3>
+                <h3 className="title">Consultation</h3>
                 <p className="description">
-                  Mauris volutpat urna tristique finibus iaculis. Morbi
-                  facilisis, justo eu vulputate elementum, est augue tincidunt
-                  ante, sed efficitur leo ligula vel velit.
+                  Get expert guidance for your digital presence. Our
+                  consultation services help you strategize and optimize your
+                  online business for success.
                 </p>
                 <a href="#" className="learn-more">
                   Learn More
@@ -112,11 +110,11 @@ const Service = () => {
                 <span className="icon">
                   <i className="fas fa-chart-pie"></i>
                 </span>
-                <h3 className="title">Business Consulting</h3>
+                <h3 className="title">Web Development</h3>
                 <p className="description">
-                  Mauris volutpat urna tristique finibus iaculis. Morbi
-                  facilisis, justo eu vulputate elementum, est augue tincidunt
-                  ante, sed efficitur leo ligula vel velit.
+                  From concept to reality, we bring your ideas to life. Our
+                  development services ensure your website is built with
+                  precision and innovation.
                 </p>
                 <a href="#" className="learn-more">
                   Learn More
@@ -131,11 +129,11 @@ const Service = () => {
                 <span className="icon">
                   <i className="fas fa-laptop-code"></i>
                 </span>
-                <h3 className="title">Website Design</h3>
+                <h3 className="title">Deployment</h3>
                 <p className="description">
-                  Mauris volutpat urna tristique finibus iaculis. Morbi
-                  facilisis, justo eu vulputate elementum, est augue tincidunt
-                  ante, sed efficitur leo ligula vel velit.
+                  Take your website live seamlessly. We handle the technical
+                  aspects, ensuring smooth deployment and launch for your online
+                  presence.
                 </p>
                 <a href="#" className="learn-more">
                   Learn More
