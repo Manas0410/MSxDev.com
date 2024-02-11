@@ -19,7 +19,7 @@ const Footer = () => {
                   <h3 className="f-title f_600 t_color f_size_18">
                     Get in Touch
                   </h3>
-                  <p>
+                  <p className="footer-text">
                     Don’t miss any updates of our new templates and extensions.!
                   </p>
                   <form
@@ -62,22 +62,22 @@ const Footer = () => {
                   <h3 className="f-title f_600 t_color f_size_18">Download</h3>
                   <ul className="list-unstyled f_list">
                     <li>
-                      <a href="#">Company</a>
+                      <a href="#" className="footer-text">Company</a>
                     </li>
                     <li>
-                      <a href="#">Android App</a>
+                      <a href="#" className="footer-text">Android App</a>
                     </li>
                     <li>
-                      <a href="#">ios App</a>
+                      <a href="#" className="footer-text">ios App</a>
                     </li>
                     <li>
-                      <a href="#">Desktop</a>
+                      <a href="#" className="footer-text">Desktop</a>
                     </li>
                     <li>
-                      <a href="#">Projects</a>
+                      <a href="#" className="footer-text">Projects</a>
                     </li>
                     <li>
-                      <a href="#">My tasks</a>
+                      <a href="#" className="footer-text">My tasks</a>
                     </li>
                   </ul>
                 </div>
@@ -95,22 +95,22 @@ const Footer = () => {
                   <h3 className="f-title f_600 t_color f_size_18">Help</h3>
                   <ul className="list-unstyled f_list">
                     <li>
-                      <a href="#">FAQ</a>
+                      <a href="#" className="footer-text">FAQ</a>
                     </li>
                     <li>
-                      <a href="#">Term &amp; conditions</a>
+                      <a href="#" className="footer-text">Term &amp; conditions</a>
                     </li>
                     <li>
-                      <a href="#">Reporting</a>
+                      <a href="#" className="footer-text">Reporting</a>
                     </li>
                     <li>
-                      <a href="#">Documentation</a>
+                      <a href="#" className="footer-text" >Documentation</a>
                     </li>
                     <li>
-                      <a href="#">Support Policy</a>
+                      <a href="#" className="footer-text">Support Policy</a>
                     </li>
                     <li>
-                      <a href="#">Privacy</a>
+                      <a href="#" className="footer-text">Privacy</a>
                     </li>
                   </ul>
                 </div>

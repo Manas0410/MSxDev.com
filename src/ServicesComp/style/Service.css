@@ -56,9 +56,15 @@ li {
     border-radius: 3px;
 }
 
+.description{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 .section-services .header-section .description {
     font-size: 14px;
     color: #282828;
+    font-weight: 400;
 }
 
 .section-services .single-service {
@@ -123,6 +129,7 @@ li {
     font-weight: 700;
     font-size: 23px;
     transition: color .3s;
+    color: #503F9D;
 }
 
 .section-services .single-service:hover .title {
@@ -133,7 +140,10 @@ li {
     margin-bottom: 20px;
     font-size: 14px;
     transition: color .3s;
+    font-weight: 400;
+    color: hsla(var(--color-brand-primary-h), var(--color-brand-primary-s), var(--color-brand-primary-l), 0.65);
 }
+
 
 .section-services .single-service:hover .description {
     color: #fff;
@@ -142,7 +152,7 @@ li {
 .section-services .single-service a {
     position: relative;
     font-size: 18px;
-    color: #202020;
+    color: #503F9D;
     text-decoration: none;
     font-weight: 500;
     transition: color .3s;

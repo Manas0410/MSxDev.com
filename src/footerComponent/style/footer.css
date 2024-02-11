@@ -34,7 +34,7 @@ a{
 
 .new_footer_top .company_widget p {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 28px;
     color: #6a7695;
     margin-bottom: 20px;
@@ -244,4 +244,8 @@ h6 {
     100% {
         left: 100%;
     }
+}
+
+.footer-text{
+    font-weight: 500;
 }
